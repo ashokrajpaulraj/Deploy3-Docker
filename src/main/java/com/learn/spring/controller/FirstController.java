@@ -20,6 +20,7 @@ public class FirstController {
 	@GetMapping("/getstud1")
 	@ResponseBody
 	public Student getStudent() {
+		System.out.println("getstud1 is called");
 		return studentService.createStudent();
 	}
 	

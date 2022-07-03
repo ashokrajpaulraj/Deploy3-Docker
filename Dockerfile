@@ -1,4 +1,4 @@
-FROM openjdk:8
-EXPOSE 8080
-ADD target/Spring-Boot-Day-2-0.0.1-SNAPSHOT.jar Spring-Boot-Day-2-0.0.1-SNAPSHOT.jar
-ENTRYPOINT [ "java", "-jar", "/Spring-Boot-Day-2-0.0.1-SNAPSHOT.jar" ]
+FROM openjdk:latest
+EXPOSE 8081
+ADD target/mydockerdeploy1.jar sbdockerdemo.jar
+ENTRYPOINT ["java", "-jar", "sbdockerdemo.jar"]

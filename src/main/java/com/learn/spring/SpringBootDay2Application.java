@@ -11,6 +11,16 @@ import com.learn.spring.model.Student;
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
+public class SpringBootDay2Application{
+	
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootDay2Application.class, args);
+		
+	}
+}
+
+/*
+@SpringBootApplication
 @Slf4j
 public class SpringBootDay2Application extends SpringBootServletInitializer {
 
@@ -40,3 +50,4 @@ public class SpringBootDay2Application extends SpringBootServletInitializer {
 	}
 
 }
+*/

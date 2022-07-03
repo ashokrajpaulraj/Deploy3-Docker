@@ -1,5 +1,8 @@
 package com.learn.spring.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,9 +22,11 @@ import lombok.extern.slf4j.Slf4j;
 
 @Builder
 @Slf4j
+@Entity
 public class Student {
 
 	@NonNull //required attribute
+	@Id
 	private String name;
 	private String gender;
 	@NonNull
@@ -29,8 +34,6 @@ public class Student {
 	@NonNull
 	private String mothername;
 	private int age;
-	
-	private Physical appereance;
 	
 	//public Student(String name)
 	//public Student(String name, String fathername, String mothername)
